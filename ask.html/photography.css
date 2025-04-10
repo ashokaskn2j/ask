@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 41);
+}
+header{
+    display: flex;
+    
+   
+}
+header img{
+    width: 30px;
+    height: fit-content;
+    position: absolute;
+    top: 18px;
+    border-radius: 50%;
+}
+header h3{
+    position: relative;
+   left: 30px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    display: flex;
+}
+header p{
+    color: white;
+    position: relative;
+    top: 18px;
+    left: 40px;
+    font-size: 10PX;
+}
+.container{
+    background-color: rgb(30, 30, 41);;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.left{
+    background-color:  rgb(30, 30, 41);
+    width: 40%;
+    height: 500px;
+}
+.left h3{
+    margin: 130px;
+    color: white;
+    font-weight: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    position: relative;
+}
+.left p{
+    color: white;
+    position: relative;
+    bottom: 110px;
+    left: 150px;
+    font-size: 15px;
+}
+.left button{
+    position: relative;
+    bottom: 100px;
+    left: 150px;
+    color: white;
+    background:rgb(30, 30, 41); 
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 10px;
+}
+.right{
+    background-color: rgb(30, 30, 41);   ;
+}
+.right ul{
+    display: flex;
+
+}
+.right ul li{
+    list-style-type: none;
+    margin-right: 70px;
+    color: rgb(76, 80, 83);
+    
+}
+.right ul li:hover{
+    color: rgb(255, 255, 255);
+    transition: 1s;
+
+}
+.right ul li img{
+    display: none;
+    position: relative;
+    top: 20px;
+}
+.right ul li:hover  img{
+    display: block;
+}
