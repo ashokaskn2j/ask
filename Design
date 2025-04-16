@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #ffc107;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+
+    .card h3 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      text-align: center;
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.5s;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#" style="color:#ffc107;">SERVICES</a>
+    <a href="#">PACKAGES</a>
+    <a href="#">GALLERY</a>
+    <a href="#">TEAM</a>
+    <a href="#">FEEDBACK</a>
+    <a href="#">CONTACT US</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h3>Portrait</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="https://via.placeholder.com/300x180?text=Portrait" alt="Portrait">
+    </div>
+    <div class="card">
+      <h3>Wildlife</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="https://via.placeholder.com/300x180?text=Wildlife" alt="Wildlife">
+    </div>
+    <div class="card">
+      <h3>Wedding</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="https://via.placeholder.com/300x180?text=Wedding" alt="Wedding">
+    </div>
+    <div class="card">
+      <h3>Beauty</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="https://via.placeholder.com/300x180?text=Beauty" alt="Beauty">
+    </div>
+    <div class="card">
+      <h3>Landscape</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="https://via.placeholder.com/300x180?text=Landscape" alt="Landscape">
+    </div>
+    <div class="card">
+      <h3>Nature</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <img src="https://via.placeholder.com/300x180?text=Nature" alt="Nature">
+    </div>
+  </div>
+</body>
+</html>
