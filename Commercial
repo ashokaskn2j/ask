@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ankur Chaturvedi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+    .hero {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0a2540;
+      color: white;
+      height: 100vh;
+      background-image: url('https://via.placeholder.com/1200x800'); /* Replace with actual image */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(10, 37, 64, 0.7);
+    }
+
+    .hero-content {
+      z-index: 2;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 60px 30px;
+      background: #f7f7f7;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .services div {
+      flex: 1;
+      margin: 0 20px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #0a2540;
+    }
+
+    .about {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .about h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 40px;
+      background-color: #0a2540;
+      color: white;
+    }
+
+    .cta button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      background-color: #fff;
+      color: #0a2540;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .cta button:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ankur Chaturvedi</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Commercial | Portraits | Corporates | Travelogue</h2>
+      <p>Capturing moments that matter.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div>Commercial</div>
+    <div>Portraits</div>
+    <div>Corporates</div>
+    <div>Travelogue</div>
+  </section>
+
+  <section class="about">
+    <h3>About Ankur</h3>
+    <p>Ankur Chaturvedi is an Advertising Photographer & Visual Storyteller based in Mumbai. Available for assignments worldwide.</p>
+  </section>
+
+  <section class="cta">
+    <p>Ready to work together?</p>
+    <button>Get In Touch</button>
+  </section>
+
+</body>
+</html>
