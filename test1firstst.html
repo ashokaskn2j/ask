@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ves.css">
+</head>
+<body>
+    <div  class="body">
+        <div class="header">
+            <div class="hleft">
+                <p id="less"><</p>
+                <script>
+                    var a = document.getElementById("less")
+
+                </script>
+                <img src="./educationimg.png" alt="">
+            </div>
+            <div class="center">
+                <ul class="headings">
+                    <li>Dashboard</li>
+                    <li class="tests">Tests</li>
+                    <li>Question Banks</li>
+                    <li>Classes</li>
+                    <li>Teachers</li>
+                </ul>
+            </div>
+            <div class="hright">
+                <button>A</button>
+                <p>Admin</p>
+            </div>
+        </div>
+        <div class="content">
+        <div class="addquestion">
+            <div class="butt">
+                <button>ADD QUESTIONS</button>
+            </div>
+            <div class="snap">
+                <p class="shot">SNAP SHOT</p>
+                 
+                    <p class="section">SECTIONS</p>
+                    <ul class="list">
+                    <img class="plus" src="./pllus.png" alt=""><li class="li1">New Section</li>
+                  <img class="red" src="./redcicle.webp" alt="">  <li class="li2">Section 1</li>
+                   <img class="blue" src="./bluecircle.webp" alt=""> <li class="li3">Section 2</li>
+                    </ul> 
+                    <p class="uncate">Uncategorized (5)</p>
+                    <p class="information">TEST INFORMATION</p>
+                <ul class="marks">
+                    
+                    <li>Marks:(10)</li>
+                    <li>No.of Q:(10)</li>
+                    <li>Neg:(10)</li>
+                    <li>Duration:(10)</li>
+                </ul>
+            </div> 
+        </div>
+        <div class="testquestion">
+           <div class="full">
+            <div class="contt">
+            <div class="head">
+                <div class="headleft">
+                    <h2>Test 1 Questions</h2>
+                </div>
+                <div class="headright">
+                    <button class="one">Full View</button>
+                    <button class="two"  onclick="view()" >View</button>
+                </div>
+                <div class="drop">
+                    <div class="ul">
+                        <ul>
+                            <li id="bluec"><input oninput="change()" id="click" type="checkbox"> Questions</li>
+                                <script>
+                                    var clic = document.getElementById("click")
+                                    var blue = document.getElementById("bluec")
+                                    function change(){
+                                            blue.style.color="rgb(0, 108, 250)"
+                                    }   
+                                </script>
+                            <li id="bluetwo" ><input onclick="change2()" id="clicktwo" type="checkbox">Owner</li>
+                            <script>
+                                    var clictwo = document.getElementById("clicktwo")
+                                    var blutwo = document.getElementById("bluetwo")
+                                    function change2(){
+                                            blutwo.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                            <li id="bluethree"><input onclick="change3()" id="clickthree" type="checkbox">Type</li>
+                            <script>
+                                    var clicthree = document.getElementById("clickthree")
+                                    var bluthree = document.getElementById("bluethree")
+                                    function change3(){
+                                            bluthree.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                            <li id="bluefour"><input onclick="change4()" id="clickfour" type="checkbox">Marks</li>
+                            <script>
+                                    var clicfour  = document.getElementById("clickfour")
+                                    var blufour  = document.getElementById("bluefour")
+                                    function change4(){
+                                            blufour.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                            <li id="bluefive"><input onclick="change5()" id="clickfive" type="checkbox">Actions</li><script>
+                                    var clicfive = document.getElementById("clickkfive")
+                                    var  blufive= document.getElementById("bluefive")
+                                    function change5(){
+                                            blufive.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                        </ul>
+                    </div>
+                    <div class="dbut">
+                        <button onclick="remo()" class="apply">Apply</button>
+                    </div>
+                </div>
+                <script>
+                    var drop1 = document.querySelector(".drop")
+                    var two1 = document.querySelector(".two")
+                    function view(){
+                        drop1.style.display="inline"
+                    }
+                    function remo(){
+                        drop1.style.display="none"
+                    }
+                </script>
+            </div>
+            <div class="search">
+                <img src="./searchicon.png" alt="">
+                <input class="input" type="search" placeholder="search">
+               
+            </div>
+            <div class="down">
+                <table id="table">
+                    <thead table-head>
+                        <tr id="tarow">
+                    <th id="input"><input type="checkbox"></th>
+                    <th id="quest">Questions</th>
+                    <th id="owner">Owner</th>
+                    <th id="type">Type</th>
+                    <th id="marks">Marks</th>
+                    <th id="actions">Actions</th>
+                    </tr>
+                    </thead>
+                    
+                </table>
+            </div>
+    </div>
+</body>
+</html>
