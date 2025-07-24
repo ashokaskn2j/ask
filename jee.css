@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.body button {
+    cursor: pointer;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgb(236, 234, 234);
+    display: flex;
+}
+.hleft {
+    display: flex;
+    width: 30%;
+}
+.hleft p{
+    color: rgb(8, 8, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+    left: 30px;
+    margin-top: 20px;
+}
+.hleft img{
+    width: 120px;
+    height: auto;
+    position: relative;
+    left: 50px;
+}
+.center{
+    width: 70%;
+    
+
+}
+.center ul{
+   margin-top: 40PX;
+   margin-left: 60px;
+}
+.center ul li{
+    display: inline;
+     align-items: center;
+     margin-left: 35px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+}
+.center .headings .tests{
+    color:  rgb(8, 8, 255) ;
+}
+.hright{
+    display: flex;
+}
+.hright button{
+    background-color:  rgb(119, 156, 235) ;
+   margin: 25px;
+    padding: 0px 10px;
+    border: 0;
+    color: white;
+    border-radius: 50%;
+   
+}
+.hright p{
+    position: relative;
+    right: 20px;
+    font-weight: 500px;
+    margin-top: 33px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.addquestion{
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 20%;
+    border-right: 1px solid rgb(236, 234, 234);
+} 
+.butt{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid  rgb(236, 234, 234);
+}
+.butt button{
+    margin-top: 10px;
+    padding: 20px 60px;
+    margin-left: 20px;
+    background-color: rgb(0, 108, 250)  ;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+.snap{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.snap .shot{
+    color: #302f2f;
+    margin: 20px 15px;
+}
+.snap  .section{
+    color: rgb(48, 47, 47);
+    margin-left: 15px;
+}
+.snap .list {
+    margin: 20px 50px;
+}
+.snap .list li{
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+.snap .plus{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 253px;
+}
+.snap .red{
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 298px;
+    left: 22px;
+}
+.snap .blue{
+     width: 15px;
+    height: auto;
+    position: absolute;
+    top: 330px;
+    left: 22px;
+}
+.snap .uncate{
+    margin-left:  50px;
+}
+.snap .information{
+    margin: 20px 15px;
+     color: rgb(48, 47, 47);
+}
+.snap .marks{
+    margin-left: 50px ;
+    
+}
+.snap .marks li{
+    margin-bottom: 15px;
+    list-style-type: circle;
+}
+.testquestion{
+    background-color:rgb(236, 234, 234);
+    height: auto;
+    width: 80%;
+}
+.full {
+    margin:15px;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+}
+.contt{
+    margin: 20px;
+}
+.head{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    padding-top: 30px;
+    display: flex;
+    margin-bottom: 0;
+}
+.headright{
+    position: absolute;
+    right: 35px;
+    margin-top: 0;
+}
+.headright .one{
+    padding: 6px 20px;
+    border: 1px solid  rgb(8, 8, 255) ;
+    color: rgb(8, 8, 255) ;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+.headright .one:hover {
+    background-color:rgb(8, 8, 255)  ;
+    color: white;
+}
+.headright .two:hover{
+    border-color: white;
+}
+.headright .two{
+     padding: 6px 20px;
+     border-radius: 15px;
+     border: 1px solid rgb(236, 234, 234);
+     color: rgb(134, 133, 133);
+      background-color: white;
+}
+.drop{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 35px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    top: 170px;
+    display: none;
+}
+.drop ul{
+    border: 1px solid rgb(236, 234, 234);
+}
+.drop .ul ul li input:focus li{
+    color: blue;
+}
+.drop ul li input{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.drop li{
+    list-style-type: none;
+    padding-bottom: 8px;
+    border-top:1px solid rgb(236, 234, 234);
+    padding-top: 8px;
+}
+.drop .dbut{
+    width: 148px;
+    height: 50px;
+    border: 1px solid rgb(236, 234, 234);
+}
+.drop .dbut button{
+    margin:  7px 7px;
+    padding: 10px 50px;
+    background-color: rgb(0, 108, 250);
+    border: 0;
+    border-radius: 5px;
+    
+}
+.search{
+    display:flex;
+    margin:0;
+    position:absolute;
+    border: 1px solid rgb(236, 234, 234);
+    width:50%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 7px;
+}
+.search .input{
+    border:0;
+    margin-left: 10px;
+    margin-top: 0;
+   display: inline;
+   width: 90%;
+
+}
+.search .input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    appearance: none;
+}
+.search .input:active{
+    border:0;
+}
+.search img{
+    width:20px;
+    height:20px;
+    margin-left: 10px;
+}
+.question{
+   background-color: rgb(255, 255, 255);
+   padding-top: 0px;
+   padding-left: 0px;
+   margin-top: 50px;
+   height: auto;
+   border-bottom: 1px solid rgb(177, 176, 176);
+   font-family: Arial, Helvetica, sans-serif; 
+}
+.question .table {
+  display: flex;
+}
+.tinput {
+   margin-left: 20px;
+}
+.flex{
+   display: flex;
+   border-top: 1px solid rgb(236, 234, 234);
+   width: 100%;
+   padding-top: 15px;
+   border-bottom: #eceaea;
+   padding-bottom: 15px;
+   background-color: rgb(243, 243, 243);
+}
+.flex .quess{
+    margin-left: 30px;
+    font-size: 15px;
+}
+.box{
+    border-top: 1px solid rgb(236, 234, 234);
+}
+.boxof{
+    border-top: 1px solid rgb(236, 234, 234);
+   display: none;
+}
+
+.boxin{
+     display: flex;
+     
+     padding-top: 15px;
+     padding-bottom: 15px;
+    
+}
+.box .answerpart{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box .binput{
+    margin-left: 20px;
+}
+.box .ans{
+    margin-left: 30px;
+    color:rgb(8, 8, 255)  ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.boxof .boxin{
+     display: flex;
+     
+     padding-top: 15px;
+     padding-bottom: 15px;
+    
+}
+.boxof .answerpart{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.boxof .binput{
+    margin-left: 20px;
+}
+.boxof .ans{
+    margin-left: 30px;
+    color:rgb(8, 8, 255)  ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.outof{
+    display: no;
+}
+
+.full .lead{
+    padding: 6px 20px;
+    border: 1px solid  rgb(8, 8, 255) ;
+    color: rgb(8, 8, 255) ;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    left: 470px;
+}
+.full .extra{
+    position:relative ;
+    left: 430px;
+    margin-top: 20px;
+}
+.load{
+     padding: 6px 20px;
+    border: 1px solid  rgb(8, 8, 255) ;
+    color: rgb(8, 8, 255) ;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    left: 361px;
+    display: none;
+}
+.owner{
+    
+    width: 120px;
+    height: 600px;
+    position: relative;
+    bottom: 627px;
+    left: 800px;
+    margin-left: 20px;
+    padding-top: 12px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+.owner span{
+    display: block;
+    height: 22px;
+    padding-top: 27px;
+
+
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jee.css">
+</head>
+<body>
+    <div  class="body">
+        <div class="header">
+            <div class="hleft">
+                <p id="less"><</p>
+                <script>
+                    var a = document.getElementById("less")
+
+                </script>
+                <img src="./educationimg.png" alt="">
+            </div>
+            <div class="center">
+                <ul class="headings">
+                    <li>Dashboard</li>
+                    <li class="tests">Tests</li>
+                    <li>Question Banks</li>
+                    <li>Classes</li>
+                    <li>Teachers</li>
+                </ul>
+            </div>
+            <div class="hright">
+                <button>A</button>
+                <p>Admin</p>
+            </div>
+        </div>
+        <div class="content">
+        <div class="addquestion">
+            <div class="butt">
+                <button>ADD QUESTIONS</button>
+            </div>
+            <div class="snap">
+                <p class="shot">SNAP SHOT</p>
+                 
+                    <p class="section">SECTIONS</p>
+                    <ul class="list">
+                    <img class="plus" src="./pllus.png" alt=""><li class="li1">New Section</li>
+                  <img class="red" src="./redcicle.webp" alt="">  <li class="li2">Section 1</li>
+                   <img class="blue" src="./bluecircle.webp" alt=""> <li class="li3">Section 2</li>
+                    </ul> 
+                    <p class="uncate">Uncategorized (5)</p>
+                    <p class="information">TEST INFORMATION</p>
+                <ul class="marks">
+                    
+                    <li>Marks:(10)</li>
+                    <li>No.of Q:(10)</li>
+                    <li>Neg:(10)</li>
+                    <li>Duration:(10)</li>
+                </ul>
+            </div> 
+        </div>
+        <div class="testquestion">
+           <div class="full">
+            <div class="contt">
+            <div class="head">
+                <div class="headleft">
+                    <h2>Test 1 Questions</h2>
+                </div>
+                <div class="headright">
+                    <button class="one">Full View</button>
+                    <button class="two"  onclick="view()" >View</button>
+                </div>
+                <div class="drop">
+                    <div class="ul">
+                        <ul>
+                            <li id="bluec"><input oninput="change()" id="click" type="checkbox"> Questions</li>
+                                <script>
+                                    var clic = document.getElementById("click")
+                                    var blue = document.getElementById("bluec")
+                                    function change(){
+                                            blue.style.color="rgb(0, 108, 250)"
+                                    }   
+                                </script>
+                            <li id="bluetwo" ><input onclick="change2()" id="clicktwo" type="checkbox">Owner</li>
+                            <script>
+                                    var clictwo = document.getElementById("clicktwo")
+                                    var blutwo = document.getElementById("bluetwo")
+                                    function change2(){
+                                            blutwo.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                            <li id="bluethree"><input onclick="change3()" id="clickthree" type="checkbox">Type</li>
+                            <script>
+                                    var clicthree = document.getElementById("clickthree")
+                                    var bluthree = document.getElementById("bluethree")
+                                    function change3(){
+                                            bluthree.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                            <li id="bluefour"><input onclick="change4()" id="clickfour" type="checkbox">Marks</li>
+                            <script>
+                                    var clicfour  = document.getElementById("clickfour")
+                                    var blufour  = document.getElementById("bluefour")
+                                    function change4(){
+                                            blufour.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                            <li id="bluefive"><input onclick="change5()" id="clickfive" type="checkbox">Actions</li><script>
+                                    var clicfive = document.getElementById("clickkfive")
+                                    var  blufive= document.getElementById("bluefive")
+                                    function change5(){
+                                            blufive.style.color="rgb(0, 108, 250)"
+                                    }   
+                                    </script>
+                        </ul>
+                    </div>
+                    <div class="dbut">
+                        <button onclick="remo()" class="apply">Apply</button>
+                    </div>
+                </div>
+                <script>
+                    var drop1 = document.querySelector(".drop")
+                    var two1 = document.querySelector(".two")
+                    function view(){
+                        drop1.style.display="inline"
+                    }
+                    function remo(){
+                        drop1.style.display="none"
+                    }
+                </script>
+            </div>
+            <div class="search">
+                <img src="./searchicon.png" alt="">
+                <input class="input" type="search" placeholder="search">
+               
+            </div>
+            <div class="question">
+                <table class="table">
+                    <thead>
+                        <tr class="tahead">
+                            <div class="flex">
+                            <div class="tinput"><input class="checkbox" type="checkbox"></div>
+                            <div class="quess">Questions</div>
+                            </div>
+
+                        </tr>
+                    </thead>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="prime1()" id="one1" class="ans">What is the primer...</div>
+                           
+                        </div>
+                         <div class="answerpart" onclick="remove()" id="answerpartone">React is primarily used for building userr interface, alloeing developer to create reusable UI components and manage the state of applications efficiently </div>
+                         <script>
+                                var one = document.getElementById("one1")
+                                var partone = document.getElementById("answerpartone")
+                                function prime1(){
+
+                                    one.textContent="What is the primary purpose of React inWeb development, and how does it contribute to building dynaic and ineractive user interface?"
+                                    partone.style.display="block"
+                                }
+                                function remove(){
+                                    partone.style.display="none"
+                                    one.textContent="What is the primar..."
+                                }
+
+                            </script>
+                           
+                        </div>
+
+                    </tr>
+                   <tr class="start">
+                    <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="result()" class="ans" id="two2">What is the reult...</div>
+                        </div>
+                        <div class="answerpart" onclick="eig()" id="answerparttwo">8</div>
+                        <!-- <div class="box">
+                            <div class="boxin">
+                                <div class="binput"><input type="checkbox"></div>
+                                <div class="ans">What is the result of 5+3?</div>
+                                <div class="secondans">8</div>
+                            </div>
+                        </div> -->
+                        <script>
+                            var two = document.getElementById("two2")
+                            var parttwo = document.getElementById("answerparttwo")
+                            function result(){
+                                two.textContent="What is the result of 5+3?"
+                                parttwo.style.display="block"
+                            }
+                            function eig(){
+                                two.textContent="What isn the result..."
+                                parttwo.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="java()" id="react" class="ans">Is React a JavaScr...</div>
+                        </div>
+                        <div onclick="yes()" id="answerpartthree" class="answerpart">Yes, React is a javaScript library for building user interfaces</div>
+                        <script>
+                            var three = document.getElementById("react")
+                            var partthree = document.getElementById("answerpartthree")
+                            function java(){
+                                three.textContent="Is React a JavaScript library?"
+                                partthree.style.display="block"
+
+                            }
+                            function yes(){
+                                three.textContent="Is React a JavaScri..."
+                                partthree.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="concept()" id="explain" class="ans">Explain the conce...</div>
+                        </div>
+                        <div onclick="syntax()" id="answerpartfour" class="answerpart">JSX is a syntex extention for JavaScript that looks similar to HTML. it allows you to write HTML-like ode in yous JavaScript files, making it easier to descripe what the UI should look like.</divv>
+                            <script>
+                                var four = document.getElementById("explain")
+                                var partfour = document.getElementById("answerpartfour")
+                                function concept(){
+                                    four.textContent="Explain the concept of JSX in React?"
+                                    partfour.style.display="block"
+                                }
+                                function syntax(){
+                                    four.textContent="Eplain the conce..."
+                                    partfour.style.display="none"
+                                }
+                            </script>
+
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                          
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="update5()" id="five5" class="ans">What is the capita...</div>
+                          
+                        </div>
+                        <div onclick="paris()" id="answerpartfive" class="answerpart">Paris</div>
+                        </div>
+                        <script>
+                            var five = document.getElementById("five5")
+                            var partfive = document.getElementById("answerpartfive")
+                            function update5(){
+                                five.textContent="What is the capital of France? "
+                                partfive.style.display="block"
+                            }
+                            function paris(){
+                                five.textContent="What is the capita..."
+                                partfive.style.display="none"
+                            }
+                        </script>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="newt()" id="newton" class="ans">Define Newton's...</div>
+                        </div>
+                        <div onclick="second()" id="answerpartsix" class="answerpart">Newton's Second Law states that Force = Mass * Acceleration(F = ma).</div>
+                        <script>
+                            var six = document.getElementById("newton")
+                            var partsix = document.getElementById("answerpartsix")
+                            function newt(){
+                                six.textContent="Defin Newton's Second Law of Motion."
+                                partsix.style.display="block"
+
+                            }
+                            function second(){
+                                six.textContent="Define Newton's S..."
+                                partsix.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="squa()" id="square" class="ans">What is the Square...</div>
+                        </div>
+                        <div onclick="root()" id="answerpartseven" class="answerpart">12</div>
+                        <script>
+                            var seven = document.getElementById("square")
+                            var partseven = document.getElementById("answerpartseven")
+                            function squa(){
+                                seven.textContent="What is the Square root of 144"
+                                partseven.style.display="block"
+                            }
+                            function root(){
+                                seven.textContent="What is the Square..."
+                                partseven.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="stants()" id="html" class="ans">What does HTML sta...</div>
+                        </div>
+                        <div onclick="hyper()" id="answerparteight" class="answerpart">Hyper Text Markup Language</div>
+                        <script>
+                            var eight = document.getElementById("html")
+                            var parteight = document.getElementById("answerparteight")
+                            function stants(){
+                                eight.textContent="What does HTML stants for?"
+                                parteight.style.display="block"
+
+                            }
+                            function hyper(){
+                                eight.textContent="What does HTML sta..."
+                                parteight.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="python()" id="develop" class="ans">Who developed the...</div>
+                        </div>
+                        <div onclick="rossum()" id="answerparnine" class="answerpart">Guido van Rossam</div>
+                        <script>
+                            var nine = document.getElementById("develop")
+                            var partnine = document.getElementById("answerparnine")
+                            function python(){
+                                nine.textContent="Who developed the Python programmng language"
+                                partnine.style.display="block"
+                            }
+                            function rossum(){
+                                nine.textContent="Who does HtML sta..."
+                                partnine.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div class="box">
+                        <div class="boxin">
+                            <div class="binput"><input type="checkbox"></div>
+                            <div onclick="symbol()" id="chemical" class="ans">What is the chemic...</div>
+                        </div>
+                        <div onclick="au()" id="answerpartten" class="answerpart">Au</div>
+                        <script>
+                            var ten = document.getElementById("chemical")
+                            var partten = document.getElementById("answerpartten")
+                            function symbol(){
+                                ten.textContent="What is the chemical symbo for Gold?"
+                                partten.style.display="block"
+                            }
+                            function au(){
+                                ten.textContent="What is the chemic..."
+                                partten.style.display="none"
+                            }
+                        </script>
+                        </div>
+                    </tr>
+                    <div class="additional">
+                    <tr  class="start">
+                        <div id="offone" class="boxof">
+                            <div class="boxin">
+                            <div class="binput"></div>
+                                <div class="input"><input type="checkbox"></div>
+                                <div onclick="solv()" id="solmul" class="ans">Solve: 15*6</div>
+                            </div>
+                            <div onclick="solve15()" id="answerparteleven" class="answerpart">90</div>
+                            <script>
+                                var eleven = document.getElementById("solmul")
+                                var parteleven = document.getElementById("answerparteleven")
+                                function solv(){
+                                    parteleven.style.display="block"
+                                }
+                                function solve15(){
+                                    parteleven.style.display="none"
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div id="offtwo" class="boxof">
+                            <div class="boxin">
+                            <div class="binput"></div>
+                                <div class="input"><input type="checkbox"></div>
+                                <div id="object" onclick="orient()" class="ans">Explain the conce...</div>
+                            </div>
+                            <div class="answerpart" id="answerparttwelve" onclick="progr()">Object-Oriented Programming (OOP) is a programming paradigm that organizes software into objects that contain both data and methods</div>
+                            <script>
+                                var twelve = document.getElementById("object")
+                                var parttwelve = document.getElementById("answerparttwelve")
+                                function orient(){
+                                    twelve.textContent="Explain the concept of Object Oriented Programming"
+                                    parttwelve.style.display="block"
+                                }
+                                function progr(){
+                                    twelve.textContent="Explain the conce..."
+                                    parttwelve.style.display="none"
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div id="offthree" class="boxof">
+                            <div class="boxin">
+                            <div class="binput"></div>
+                                <div class="input"><input type="checkbox"></div>
+                                <div onclick="functio()" id="functi" class="ans">What is the functi...</div>
+                            </div>
+                            <div onclick="random()" id="answerpartthirteen" class="answerpart">RAM (Random Access Memory) is used to store and access data that is actively being used by the system, making opeerations faster.</div>
+                            <script>
+                                var thirteen = document.getElementById("functi")
+                                var partthirteen = document.getElementById("answerpartthirteen")
+                                function functio(){
+                                    thirteen.textContent="What is the function of RAM in a computer"
+                                    partthirteen.style.display="block"
+                                }
+                                function random(){
+                                    thirteen.textContent="What is the functi..."
+                                    partthirteen.style.display="none"
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div id="offfour" class="boxof">
+                            <div class="boxin">
+                            <div class="binput"></div>
+                                <div class="input"><input type="checkbox"></div>
+                                <div onclick="redplat()" id="planet" class="ans">Which planet is kn...</div>
+                            </div>
+                            <div onclick="mars()" id="answerpartfourteen" class="answerpart">Mars</div>
+                            <script>
+                                var fourteen = document.getElementById("planet")
+                                var partfourteen = document.getElementById("answerpartfourteen")
+                                function redplat(){
+                                    fourteen.textContent="Which planet is known as the Red Planet"
+                                    partfourteen.style.display="block"
+                                }
+                                function mars(){
+                                    fourteen.textContent="Which planet is kn..."
+                                    partfourteen.style.display="none"
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div id="offfive" class="boxof">
+                            <div class="boxin">
+                            <div class="binput"></div>
+                                <div class="input"><input type="checkbox"></div>
+                                <div onclick="lenght()" id="rectangle" class="ans">Calculate the are...</div>
+                            </div>
+                            <div onclick="fifty()" id="answerpartfifteen" class="answerpart">50 cm^2</div>
+                            <script>
+                                var fifteen = document.getElementById("rectangle")
+                                var partfifteen = document.getElementById("answerpartfifteen")
+                                function lenght(){
+                                    fifteen.textContent="Calculate the area of a rectangle with lenght 10cm and width 5cm."
+                                    partfifteen.style.display="block"
+                                }
+                                function fifty(){
+                                    fifteen.textContent="Calculate the area"
+                                    partfifteen.style.display="none"
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    <tr class="start">
+                        <div id="offsix" class="boxof">
+                            <div class="boxin">
+                            <div class="binput"></div>
+                                <div class="input"><input type="checkbox"></div>
+                                <div onclick="rithm()" id="algo" class="ans">What is an algorit...</div>
+                            </div>
+                            <div onclick="formula()" id="answerpartsixteen" class="answerpart">An algorith is a step-by-step procedure or formula for solving  problem.</div>
+                            <script>
+                                var sixteen = document.getElementById("algo")
+                                var partsixteen= document.getElementById("answerpartsixteen")
+                                function rithm(){
+                                    sixteen.textContent="What is the algorith?"
+                                    partsixteen.style.display="block"
+                                }
+                                function formula(){
+                                    sixteen.textContent="What is the algorit..."
+                                    partsixteen.style.display="none"
+                                }
+                            </script>
+                        </div>
+                    </tr>
+                    </div>
+                </table>
+            
+            <button onclick="add()" id="more" class="lead">Load More</button>
+            <button id="less" class="load">Load Less</button>
+            <script>
+                var ofone = document.getElementById("offone")
+                var oftwo = document.getElementById("offtwo")
+                var ofthree = document.getElementById("offthree")
+                var offour = document.getElementById("offfour")
+                var offive = document.getElementById("offfive")
+                var ofsix = document.getElementById("offsix")
+                var loadless = document.getElementById("less")
+                function add(){
+                    ofone.style.display="block"
+                    oftwo.style.display="block"
+                    ofthree.style.display="block"
+                    offour.style.display="block"
+                    offive.style.display="block"
+                    ofsix.style.display="block"
+                    loadless.style.display="block"
+                }
+                </script>
+           
+            
+            
+            <p class="extra">Showing 10 out of 16 Tests</p>
+                
+
+ 
+            </div>
+        </div>
+        <div class="owner">
+           <h3>owner</h3>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+           <span>admin</span>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
