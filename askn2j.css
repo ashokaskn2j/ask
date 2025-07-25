@@ -153,6 +153,7 @@
 .testquestion{
     background-color:rgb(236, 234, 234);
     height: auto;
+    /* overflow-y: scroll; */
     width: 80%;
 }
 .full {
@@ -174,8 +175,8 @@
     margin-bottom: 0;
 }
 .headright{
-    position: absolute;
-    right: 35px;
+    position: relative;
+    left: 650px;
     margin-top: 0;
 }
 .headright .one{
@@ -240,9 +241,9 @@
 .search{
     display:flex;
     margin:0;
-    position:absolute;
+    position:relative;
     border: 1px solid rgb(236, 234, 234);
-    width:50%;
+    width:40%;
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 7px;
@@ -265,34 +266,196 @@
     height:20px;
     margin-left: 10px;
 }
+.questionfull{
+   background-color: rgb(255, 255, 255);
+   padding-top: 0px;
+   padding-left: 0px;
+   margin-top: 10px;
+   height: auto;
+   border-bottom: 1px solid rgb(177, 176, 176);
+   font-family: Arial, Helvetica, sans-serif; 
+}
+.questionfull .table {
+  display: flex;
+}
+.tinput {
+   margin-left: 20px;
+}
+.flex{
+   display: flex;
+   border-top: 1px solid rgb(236, 234, 234);
+   width: 100%;
+   padding-top: 15px;
+   border-bottom: #eceaea;
+   padding-bottom: 15px;
+   background-color: rgb(243, 243, 243);
+}
+.flex .quess{
+    margin-left: 30px;
+    font-size: 15px;
+}
+.box{
+    border-top: 1px solid rgb(236, 234, 234);
+}
+.boxof{
+    border-top: 1px solid rgb(236, 234, 234);
+   display: none;
+}
+
+.boxin{
+     display: flex;
+     
+     padding-top: 15px;
+     padding-bottom: 15px;
+    
+}
+.box .answerpart{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box .binput{
+    margin-left: 20px;
+}
+.box .ans{
+    margin-left: 30px;
+    color:rgb(8, 8, 255)  ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.boxof .boxin{
+     display: flex;
+     
+     padding-top: 15px;
+     padding-bottom: 15px;
+    
+}
+.boxof .answerpart{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.boxof .binput{
+    margin-left: 20px;
+}
+.boxof .ans{
+    margin-left: 30px;
+    color:rgb(8, 8, 255)  ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.outof{
+    display: no;
+}
+
+.full .lead{
+    padding: 6px 20px;
+    border: 1px solid  rgb(8, 8, 255) ;
+    color: rgb(8, 8, 255) ;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    left: 470px;
+}
+.full .extra{
+    position:relative ;
+    left: 430px;
+    margin-top: 20px;
+}
+.load{
+     padding: 6px 20px;
+    border: 1px solid  rgb(8, 8, 255) ;
+    color: rgb(8, 8, 255) ;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    left: 361px;
+    display: none;
+}
+.owner{
+    
+    width: 120px;
+    height: 600px;
+    position: relative;
+    bottom: 627px;
+    left: 800px;
+    margin-left: 20px;
+    padding-top: 12px;
+    height: 50px;
+    padding-bottom: 10px;
+    display: none;
+}
+.owner span{
+    display: block;
+    height: 22px;
+    padding-top: 27px;
+
+
+}
+/* ................................................ */
 .rcontainer{
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 600px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 0;
      border-top: 1px solid rgb(230, 227, 227);
-     padding-top: 10px;
-}
-.rcontainer table th {
-    padding-left: 20px;
-}
-.hquest{
-    padding-left: 30px;
-    width: 500px;
-}
-.howner{
-    width: 80px;
-}
-.htype{
-    width: 100px;
-}
-.hmarks{
-    width: 80px;
-}
-.hactions{
-    width: auto;
-}
-.heading{
-   
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: none;
+    }
+
+
+.rcontainer table {
+      width: 1000px;
+      height: 600px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+    .rcontainer thead tbody{
+        width: 100%;
+    }
+    .rcontainer thead tbody td{
+        border-top: 1px solid rgb(238, 236, 236);
+    }
+    th,td{
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding: 12px; 
+    }
+    #tarow{
+        border-top: 1px solid rgb(240, 240, 240);
+    }
+    #extarow{
+        border-top: 1px solid rgb(240, 240, 240);
+    }
+    th {
+      background-color: #f9f9f9;
+    }
+    .questone{
+        width: 500px;
+    }
+    .question {
+     margin-left: 0;
+     padding-left: 0;
+     padding-right: 0;
+     color: rgb(8, 8, 255) ;
+     width: 500px;
+    }
+.answers{
+    background-color: #f3f3f3;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #696969;
 }

@@ -279,11 +279,17 @@
     background-color: rgb(255, 255, 255);
     margin-top: 50px;
 }
+.down #table #tarow{
+    background-color: rgb(241, 241, 241);
+     border-collapse: collapse;
+    border-width: 0;
+}
 .down table thead tr #input{
-    padding: 12px 20px;
+    padding: 12px 20px;   
 }
 #quest{
     padding-right: 380px;
+    
 }
 #owner{
     padding-right: 60px;

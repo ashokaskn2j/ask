@@ -59,12 +59,24 @@
         <div class="testquestion">
            <div class="full">
             <div class="contt">
-            <div class="head">
+            <div onclick="rem()" class="head">
+                <script>
+                     
+                </script>
                 <div class="headleft">
                     <h2>Test 1 Questions</h2>
                 </div>
                 <div class="headright">
-                    <button class="one">Full View</button>
+                    <button onclick="ask()" class="one">Full View</button>
+                    <script>
+                         var one = document.getElementById("one1")
+                                var partone = document.getElementById("answerpartone")
+                                function ask(){
+                                     one.textContent="What is the primary purpose of React inWeb development, and how does it contribute to building dynaic and ineractive user interface?"
+                                    partone.style.display="block"
+                                }
+                                
+                    </script>
                     <button class="two"  onclick="view()" >View</button>
                 </div>
                 <div class="drop">
@@ -135,10 +147,16 @@
                 <table class="table">
                     <thead>
                         <tr class="tahead">
+                            <td>
                             <div class="flex">
                             <div class="tinput"><input class="checkbox" type="checkbox"></div>
                             <div class="quess">Questions</div>
-                            </div>
+                            </div></td>
+
+                            <td class="admin">Owner</td>
+        <td class="type">Types</td>
+        <td class="marks">Marks</td>
+        <td class="acions">Actions</td>
 
                         </tr>
                     </thead>
@@ -175,13 +193,7 @@
                             <div onclick="result()" class="ans" id="two2">What is the reult...</div>
                         </div>
                         <div class="answerpart" onclick="eig()" id="answerparttwo">8</div>
-                        <!-- <div class="box">
-                            <div class="boxin">
-                                <div class="binput"><input type="checkbox"></div>
-                                <div class="ans">What is the result of 5+3?</div>
-                                <div class="secondans">8</div>
-                            </div>
-                        </div> -->
+                       
                         <script>
                             var two = document.getElementById("two2")
                             var parttwo = document.getElementById("answerparttwo")

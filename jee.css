@@ -400,6 +400,7 @@
     padding-top: 12px;
     height: 50px;
     padding-bottom: 10px;
+    display: none;
 }
 .owner span{
     display: block;
