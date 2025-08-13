@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            background-color: rgb(220, 221, 223);
+           border: none;
+        }
+        th,td{
+            padding: 10px 20px;
+        }
+        .ques{
+            color: rgb(42, 116, 253);
+        }
+        .ans{
+            background-color: rgb(240, 239, 239);
+            color: rgb(96, 96, 97);
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+        .ex-ques{
+            display:none;
+        }
+        .questions{
+            width: 600px;
+        }
+        .owner{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <table>
+            <tr>
+                <thead>
+                <th><input type="checkbox"></th>
+                <th class="questions">Questions</th>
+                <th class="owner">Owner</th>
+                <th>Types</th>
+                <th>Marks</th>
+                </thead>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><div class="ques" onclick="one()">What is the primary<span class="dot">...</span> <span class="ex-ques"> purpose of React inWeb development, and how does it contribute to building dynaic and ineractive user interface?</span></div> 
+                    <div class="ans" id="anson" onclick="oneclo()">React is primarily used for building userr interface, alloeing developer to create reusable UI components and manage the state of applications efficiently</div>
+                    <script>
+                        var dot = document.querySelector(".dot")
+                        var ex = document.querySelector(".ex-ques")
+                        var ans = document.getElementById("anson")
+                        function one(){
+                            dot.style.display= "none"
+                            ex.style.display= "inline"
+                            ans.style.display= "block"
+                        }
+                        function oneclo(){
+                            dot.style.display= "inline"
+                            ex.style.display= "none"
+                            ans.style.display= "none" 
+                        }
+                    </script>
+                </td>
+                <td class="owner">Admin</td>
+                <td>Theory</td> 
+                <td>5</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><div class="ques">What is the result of 5 + 3?</div>
+                    <div class="ans">8</div>
+                </td>
+                <td class="owner">Admin</td>
+                <td>Numerical</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> <div class="ques">Is React a javascript library?</div>
+                    <div class="ans">Yes,React is a javascript library for building user interface</div>
+                </td>
+                <td class="owner">Admin</td>
+                <td>MCQ</td>
+                <td>1</td>
+            </tr>
+            <script></script>
+        </table>
+    </div>
+</body>
+</html>
